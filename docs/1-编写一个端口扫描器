@@ -150,6 +150,10 @@ def main():
 
 if __name__ == '__main__':
     main()
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 ```
 
 ### 线程扫描
@@ -196,7 +200,12 @@ def connScan(tgtHost, tgtPOrt):
         print('[-] {}/tcp closed'.format(tgtPOrt))
     finally:
         screenLock.release()
+<<<<<<< HEAD
         connSkt.close()        
+=======
+        connSkt.close()
+        
+>>>>>>> origin/master
 ```
 
 把其他所有的函数放入同一个脚本中，并添加一些参数解析代码，就有了最终的端口扫描脚本。
