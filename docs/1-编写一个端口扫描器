@@ -1,3 +1,5 @@
+[源代码：https://github.com/LToddy/penetrationtest](https://github.com/LToddy/penetrationtest)
+
 任何一个靠谱的网络攻击都是起步于侦察的。
 攻击者必须在挑选并确定利用目标中的漏洞之前找到目标在哪里有漏洞。
 编写一个扫描目标主机开放的TCP端口的侦察小脚本。
@@ -150,10 +152,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 ```
 
 ### 线程扫描
@@ -200,15 +198,11 @@ def connScan(tgtHost, tgtPOrt):
         print('[-] {}/tcp closed'.format(tgtPOrt))
     finally:
         screenLock.release()
-<<<<<<< HEAD
-        connSkt.close()        
-=======
-        connSkt.close()
-        
->>>>>>> origin/master
+        connSkt.close() 
 ```
 
 把其他所有的函数放入同一个脚本中，并添加一些参数解析代码，就有了最终的端口扫描脚本。
+
 ```python
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
